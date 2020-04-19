@@ -1,0 +1,21 @@
+body {background: url(images/fondo.jpg); width: 100%; background-repeat: no-repeat; background-attachment: fixed;}
+
+h1 {background: rgba(0,180,180,1); color: rgba(140,0,160,1); text-align: center; font-family: cursive;}
+
+.menu {background: rgba(200,240,240,1); text-align: center; list-style: none;}
+.menu li {margin: 10px; display: inline-block;}
+.menu li a {margin: 10px; padding: 8px; text-decoration: none; border: 1px solid rgba(120,120,120,1);}
+.menu li a:hover {background: rgba(0,120,100,1);}
+
+header img {position: relative; top: 12px; bottom: 0; right: 0; left: 12px;}
+
+label {color: #fff;}
+
+input[type="button"]:hover {border: 1px solid #1668c4;}
+
+.f1 {padding: 10px; border:2px solid rgba(20,120,220,1); width: 220px;
+     position: relative; top: 10px; bottom: 0; right: 0; left: 41%;}
+
+.f1 p {color: #fff;}
+
+.f2 {border:1px solid rgba(20,120,220,1); padding: 20px; color: #fff; width: 250px;}
