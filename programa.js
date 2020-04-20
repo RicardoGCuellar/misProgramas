@@ -1,21 +1,23 @@
-var l=[];
+const l=[];
+const l1=[];
 
 /* Textos */
-var a=document.getElementById("nom");
-var n1=document.getElementById("num1");
+const a=document.getElementById("nom");
+const n1=document.getElementById("num1");
 
 /* Párrafos */
-var r=document.getElementById("n1");
-var nm1=document.getElementById("nm1");
+const r=document.getElementById("n1");
+const nm1=document.getElementById("nm1");
+const nm2=document.getElementById("nm2");
 
 /* Botones */
-var bot=document.getElementById("b1");
+const bot=document.getElementById("b1");
 if (bot)
 {
     bot.addEventListener("click", escribirNombre);
 }
 
-var bV=document.getElementById("b2");
+const bV=document.getElementById("b2");
 if (bV)
 {
     bV.addEventListener("click", d_B)
@@ -23,29 +25,19 @@ if (bV)
 
 
 /* h2 */
-var h2=document.getElementById("h2");
+const h2=document.getElementById("h2");
 
 function d_B()
-{
-    var n=parseInt(n1.value);
-    while (n>1)
-    {  
-        var resp=n%2;
-        l.push(Math.floor(resp));
-        n=n/2; 
-    }
-    l.push(Math.floor(n))
-    
-    nm1.innerHTML = l.reverse();
-    var leng=l.length;
-    for (var i=0; i<=leng; i++)
-    {
-        l.shift(); 
-    }   
+{   
+    const numero=parseInt(n1.value);
+    nm1.innerHTML="Su número ingresado: " + numero.toString() + "<br />Su número en binario: " + numero.toString(2)
+    + "<br />Su número en Octal: " + numero.toString(8) + "<br />Su número en Hexadecimal: " + numero.toString(16);
 }
+
 
 function escribirNombre()
 {
     r.innerHTML="¡Bienvenido " + a.value +"!";
     h2.innerHTML=a.value;
 }
+
